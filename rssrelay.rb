@@ -66,6 +66,7 @@ class RSSRelay < Sinatra::Application
           {
           :title => item.title, 
           :link => item.link,
+          :description => item.description,
           :published => 
             if feed.class.to_s == "RSS::RDF"
               item.dc_date
